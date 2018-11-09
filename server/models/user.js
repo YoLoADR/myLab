@@ -31,6 +31,6 @@ userSchema.methods.isPasswordEqualTo = function(externalPassword, done) {
 		done(null, isMatch)
 	})
 }
-const UserModel = mongoose.model('user', userSchema)
+const UserModel = mongoose.model('User', userSchema)
 
 module.exports = UserModel

@@ -1,22 +1,19 @@
-import React from 'react';
-import App from './app/App';
-import {render} from 'react-dom'
-import {Provider} from 'react-redux'
-import {BrowserRouter} from 'react-router-dom';
-import store from './app/store';
-import ScrollToTop from './app/ScrollToTop';
-import './scss/index.scss';
+import React from 'react'
+import App from './app/App'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import { BrowserRouter } from 'react-router-dom'
+import store from './app/store'
+import ScrollToTop from './app/ScrollToTop'
+import './scss/index.scss'
 
 render(
-    <Provider store={store}>
-      <BrowserRouter basename='/dashboard'>
-        <ScrollToTop>
-          <App/>
-        </ScrollToTop>
-      </BrowserRouter>
-    </Provider>,
-    document.getElementById('root')
-  );
-  
-
-
+	<Provider store={store}>
+		<BrowserRouter basename="/dashboard">
+			<ScrollToTop>
+				<App />
+			</ScrollToTop>
+		</BrowserRouter>
+	</Provider>,
+	document.getElementById('root')
+)

@@ -1,5 +1,3 @@
-import sidebarReducer from './sidebarReducer';
-
-export {
-  sidebarReducer
-}
+import sidebarReducer from './sidebarReducer'
+import authentificationReducer from './authentificationReducer'
+export { sidebarReducer, authentificationReducer }
